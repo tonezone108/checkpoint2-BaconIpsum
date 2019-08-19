@@ -1,0 +1,206 @@
+section.Adspace1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: GRAY;
+  grid-area: Adspace1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+section.Adspace2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: GRAY;
+  grid-area: Adspace2;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+section.Landing {
+  color: white;
+  grid-area: Landing;
+  text-align: center;
+  padding: 20px;
+}
+
+section.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background: darkgray;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+section.main {
+  padding-top: 240px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "Adspace1"
+    "Landing"
+    "Adspace2";
+}
+
+.small-text {
+  grid-column: 2/3;
+  color: white;
+  font-size: 10px;
+  margin: 3% auto;
+}
+
+.has-border {
+  border-radius: 25px;
+  border: 2px solid white;
+  background: black;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+div.title {
+  color: white;
+}
+
+div.socialmedia {
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+}
+
+ul.footercontent {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+img.icon {
+  height: 25px;
+  width: 25px;
+}
+
+img.welcome {
+  border-radius: 20%;
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+iframe {
+  margin: auto;
+  height: 400px;
+  width: 600px;
+  border-color: orange;
+  /* background: purple; */
+}
+
+.img1 {
+  border-radius: 20%;
+  padding: 20px;
+  width: 170px;
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img2 {
+  border-radius: 20%;
+  padding: 20px;
+  width: 170px;
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.one {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: gray;
+  color: white;
+}
+
+div.one1 {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: gray;
+  color: white;
+}
+
+div.one2 {
+  margin-top: 15px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: gray;
+  color: white;
+}
+
+div.one p {
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  section.main {
+    padding-top: 240px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "Adspace1 Landing Adspace2";
+  }
+
+  .img1 {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+  }
+
+  .img2 {
+    width: 170px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+  }
+}
